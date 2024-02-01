@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   get '/', to: 'welcome#index'
   get '/recordlabels', to: 'record_labels#index'
+  get '/recordlabels/:id', to: 'record_labels#show'
 end
