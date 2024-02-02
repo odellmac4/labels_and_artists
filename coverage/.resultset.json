@@ -240,6 +240,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
@@ -263,15 +265,22 @@
           null
         ]
       },
-      "/Users/odellmcfarlandiv/turing_work/2mod/labels_and_artists/app/controllers/record_labels_controller.rb": {
+      "/Users/odellmcfarlandiv/turing_work/2mod/labels_and_artists/app/models/artist.rb": {
         "lines": [
           1,
           1,
-          2,
+          null
+        ]
+      },
+      "/Users/odellmcfarlandiv/turing_work/2mod/labels_and_artists/app/controllers/artists_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
           null,
           null,
           1,
-          2,
+          4,
           null,
           null
         ]
@@ -283,6 +292,6 @@
         ]
       }
     },
-    "timestamp": 1706813730
+    "timestamp": 1706851821
   }
 }

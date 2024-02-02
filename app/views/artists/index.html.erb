@@ -1,0 +1,7 @@
+<h1>Artists</h1>
+<% @artists.each do |artist| %>
+   <p><a href="/artists/<%=artist.id%>"><%= artist.name %></a></p>
+   <p>Grammy Award Winning: <%= artist.grammy_winning %>
+   <p>Total Streams: <%= artist.total_streams %>
+   <p>Highest Charting Song: <%= artist.highest_charted_song %>
+<% end %>

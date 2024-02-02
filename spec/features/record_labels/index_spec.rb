@@ -17,7 +17,7 @@ RSpec.describe 'Record Labels index page', type: :feature do
 
             click_on xl.name
 
-            expect(current_path).to eq(visit "/recordlabels/#{xl.id}")
+            expect(current_path).to eq("/recordlabels/#{xl.id}")
         end
 
     end

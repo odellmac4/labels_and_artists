@@ -30,3 +30,5 @@ RSpec.describe 'Record Labels show page', type: :feature do
         expect(page).to have_content(@xl.genre_focus)
     end
 end
+
+# <div id=“player_<%= player.id %>”></div>
