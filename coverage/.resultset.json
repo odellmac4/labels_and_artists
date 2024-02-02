@@ -242,6 +242,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -272,14 +273,11 @@
           null
         ]
       },
-      "/Users/odellmcfarlandiv/turing_work/2mod/labels_and_artists/app/controllers/artists_controller.rb": {
+      "/Users/odellmcfarlandiv/turing_work/2mod/labels_and_artists/app/controllers/record_label_artists_controller.rb": {
         "lines": [
           1,
           1,
-          0,
-          null,
-          null,
-          1,
+          4,
           4,
           null,
           null
@@ -292,6 +290,6 @@
         ]
       }
     },
-    "timestamp": 1706851821
+    "timestamp": 1706855550
   }
 }
