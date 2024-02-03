@@ -35,6 +35,14 @@ RSpec.describe 'Record Labels show page', type: :feature do
             end
         end
     end
+
+    describe 'user story 8' do
+        it 'displays a link on each page leading to all index pages' do
+            expect(page).to have_link('Home', href: '/')
+            expect(page).to have_link('Record Labels', href: '/recordlabels')
+            expect(page).to have_link('Artists', href: '/artists')
+        end
+    end
 end
 
 #<div id=“player_<%= player.id %>”></div>
