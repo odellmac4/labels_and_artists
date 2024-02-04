@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   # root "posts#index"
   get '/', to: 'welcome#index'
   get '/recordlabels', to: 'record_labels#index'
+  get '/recordlabels/new', to: 'record_labels#new'
+  post '/recordlabels', to: 'record_labels#create'
   get '/recordlabels/:id', to: 'record_labels#show'
   get '/artists', to: 'artists#index'
   get '/artists/:id', to: 'artists#show'
   get '/recordlabels/:record_label_id/artists', to: 'record_label_artists#index'
+  
 end

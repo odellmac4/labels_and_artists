@@ -1,4 +1,5 @@
 <h1>Record Labels</h1>
+<button type="button" onclick="window.location.href='/recordlabels/new'">Add New Record Label</button>
 <% @record_labels.each do |label| %>
    <p><a href="/recordlabels/<%=label.id%>"><%= label.name %></a></p>
 <% end %>
