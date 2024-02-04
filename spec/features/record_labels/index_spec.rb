@@ -31,4 +31,10 @@ RSpec.describe 'Record Labels index page', type: :feature do
             expect(motown.name).to_not appear_before(tde.name)
         end
     end
+
+    describe 'user story 11' do
+        it 'has a button to create a new record label' do
+            expect(page).to have_button('Add New Record Label')
+        end
+    end
 end
