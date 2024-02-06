@@ -1,0 +1,12 @@
+<h1> New <%=@record_label.name%> Artist</h1>
+<%= form_with url: "/recordlabels/#{@record_label.id}/artists", method: :post, data: {turbo: false}, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br/>
+  <%= form.label :grammy_winning %>
+  <%= form.check_box :grammy_winning %><br/>
+  <%= form.label :total_streams %>
+  <%= form.number_field :total_streams %><br/>
+  <%= form.label :highest_charted_song %>
+  <%= form.text_field :highest_charted_song %><br/>
+  <%= form.submit "Add New Artist" %>
+<% end %>
