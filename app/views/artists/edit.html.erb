@@ -1,0 +1,12 @@
+<h1> Update <%=@artist.name%> Information</h1>
+<%= form_with url: "/artists/#{@artist.id}", method: :patch, data: {turbo: false}, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %><br/>
+  <%= form.label :grammy_winning %>
+  <%= form.check_box :grammy_winning %><br/>
+  <%= form.label :total_streams %>
+  <%= form.number_field :total_streams %><br/>
+  <%= form.label :highest_charted_song %>
+  <%= form.text_field :highest_charted_song %><br/>
+  <%= form.button "Update Artist" %>
+<% end %>
