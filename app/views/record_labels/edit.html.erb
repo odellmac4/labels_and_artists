@@ -1,0 +1,24 @@
+<form action="/recordlabels/<%=@record_label.id%>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="PATCH" />
+  <p>Edit <%= @record_label.name%> Information </p>
+
+  <label for="name">Record Label Name:</label>
+  <input type='text' name='name'value="<%= @record_label.name%>"/><br/>
+
+  <label for="major">Check if a Major Label:</label>
+  <input type="checkbox" name="major" id="major" value="<%= @record_label.major_label%>"/><br/>
+
+
+  <label for="tours">Number of Launched Tours:</label>
+  <input type="number" name="tours" id="tours" value="<%= @record_label.launched_tours%>"/><br/>
+
+<label for="genre">Genre Focus:</label>
+  <select name="genre" id="genre" value="<%= @record_label.genre_focus%>">
+    <option value="R&B">R&B</option>
+    <option value="Hip-Hop">Hip-Hop</option>
+    <option value="Country">Country</option>
+    <option value="Punk Rock">Punk Rock</option>
+  </select><br/>
+<br>
+  <input type='submit' value="Update Record Label"/>
