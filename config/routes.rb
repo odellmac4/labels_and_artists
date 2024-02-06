@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   patch '/recordlabels/:id', to: 'record_labels#update'
   get '/artists', to: 'artists#index'
   get '/artists/:id', to: 'artists#show'
+  get '/recordlabels/:record_label_id/artists/new', to: 'record_label_artists#new'
+  post '/recordlabels/:record_label_id/artists', to: 'record_label_artists#create' 
   get '/recordlabels/:record_label_id/artists', to: 'record_label_artists#index'
-  
 end

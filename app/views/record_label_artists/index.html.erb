@@ -3,4 +3,6 @@
     <p>Grammy Award Winning: <%= artist.grammy_winning %>
     <p>Total Streams: <%= artist.total_streams %>
     <p>Highest Charting Song: <%= artist.highest_charted_song %>
+    <br>
+    <%= link_to 'Add New Artist', "/recordlabels/#{artist.record_label_id}/artists/new" %>
 <% end %>
